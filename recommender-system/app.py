@@ -17,15 +17,9 @@ def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key={}&language=en-US".format(movie_id, api_key)
     data = requests.get(url)
     data = data.json()
-
-    if 'poster_path' in data:
-        poster_path = data['poster_path']
-        full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
-        return full_path
-    else:
-        print(f"Poster missing for movie ID {movie_id}, returning default image.")
-        return "https://via.placeholder.com/500x750.png?text=No+Poster+Available"  # Placeholder image
-
+    poster_path = data['poster_path']
+    full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
+    return full_path
 
 
 def recommend(movie):
