@@ -14,20 +14,12 @@ api_key = os.getenv("API_KEY")
 
 
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
-    response = requests.get(url)
-    
-    if response.status_code == 200:
-        data = response.json()
-        poster_path = data.get('poster_path', None)
-        if poster_path:
-            full_path = f"https://image.tmdb.org/t/p/w500/{poster_path}"
-            return full_path
-        else:
-            return "https://via.placeholder.com/500x750.png?text=No+Poster+Available"  # Placeholder image if no poster
-    else:
-        return "https://via.placeholder.com/500x750.png?text=Error+Fetching+Poster"  # Error image in case of failed API request
-
+    url = "https://api.themoviedb.org/3/movie/{}?api_key={}&language=en-US".format(movie_id, api_key)
+    data = requests.get(url)
+    data = data.json()
+    poster_path = data['poster_path']
+    full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
+    return full_path
 
 
 def recommend(movie):
