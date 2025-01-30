@@ -45,7 +45,7 @@ def recommend(movie):
 st.header('Movie Recommender System')
 
 # Load data
-movies = pickle.load(open('movies.pkl', 'rb'))
+movies = pickle.load(open('./movies.pkl', 'rb'))
 
 # Direct Google Drive shareable link
 url_drive = 'https://drive.google.com/uc?id=1Tl63LJZ2MPmilnFyQHD0I9Q72heUXIhz'
