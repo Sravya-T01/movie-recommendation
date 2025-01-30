@@ -158,3 +158,14 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+recommender-system/main.py
+.DS_Store
+recommender-system/.idea/inspectionProfiles/profiles_settings.xml
+recommender-system/.idea/inspectionProfiles/Project_Default.xml
+recommender-system/.idea/misc.xml
+recommender-system/.idea/modules.xml
+recommender-system/.idea/recommender-system.iml
+recommender-system/.idea/vcs.xml
+recommender-system/.idea/.name
+3. Recommender System/similarity.pkl
+recommender-system/similarity.pkl
