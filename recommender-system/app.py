@@ -45,7 +45,12 @@ def recommend(movie):
 st.header('Movie Recommender System')
 
 # Load data
-movies = pickle.load(open('./movies.pkl', 'rb'))
+# Absolute path to the current directory
+current_dir = os.path.dirname(os.path.realpath(__file__))
+movies_path = os.path.join(current_dir, 'movies.pkl')
+
+# Load the movie data
+movies = pickle.load(open(movies_path, 'rb'))
 
 # Direct Google Drive shareable link
 url_drive = 'https://drive.google.com/uc?id=1Tl63LJZ2MPmilnFyQHD0I9Q72heUXIhz'
