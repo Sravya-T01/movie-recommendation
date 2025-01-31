@@ -25,3 +25,4 @@ Identified key numerical statistics such as mean, max, and min values.
 ## Insights
 
 **1. Top 10 Most Popular Actors**
+
