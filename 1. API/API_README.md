@@ -170,6 +170,7 @@ These files are generated during the execution of the notebook and are not neces
 ## Notes
 
 Make sure to replace 'api_key_here' with your actual TMDb API key in the code.
+
 The API rate limit is respected by adding delays between API requests to avoid overloading the server.
 
 ## License
