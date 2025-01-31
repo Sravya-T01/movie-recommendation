@@ -26,3 +26,26 @@ Identified key numerical statistics such as mean, max, and min values.
 
 **1. Top 10 Most Popular Actors**
 
+![Movie Recommendation System](images/top_10_actors.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
