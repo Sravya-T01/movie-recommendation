@@ -159,7 +159,9 @@ README.md
 Note: The following intermediate files are not included in the repository because they are used only during the data processing and cleaning stages:
 
 `Movies.csv`: Raw movie data from the API.
+
 `Cleaned_Movies.csv`: Cleaned version of the movie data.
+
 `Details.csv`: Detailed movie information fetched from the API.
 
 These files are generated during the execution of the notebook and are not necessary for further analysis or the recommendation system.
