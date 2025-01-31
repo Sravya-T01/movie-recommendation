@@ -47,7 +47,7 @@ Once you have the API key, you need to add it to the project.
 
 The movie data is fetched from the TMDb API using the /movie/popular endpoint, which retrieves a list of popular movies. The data is collected across multiple pages and stored in a data frame.
 
-`response = requests.get(f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en-US&page={j}').json()`
+```response = requests.get(f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en-US&page={j}').json()```
 
 The data includes:
 
