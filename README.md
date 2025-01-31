@@ -18,6 +18,7 @@ This project is a **content-based movie recommendation system** that suggests mo
 ├── 3. Recommender System/             # Model implementation and recommendation system
 ├── recommender-system/                # Streamlit app deployment files
 ├── data/                              # Processed datasets
+├── images                             # images of Exploratory Data Analysis
 ├── README.md                          # Project overview (this file)
 ```
 
