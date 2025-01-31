@@ -156,7 +156,7 @@ README.md
 ```
 **Note**
 
-Note: The following intermediate files are not included in the repository because they are used only during the data processing and cleaning stages:
+The following intermediate files are not included in the repository because they are used only during the data processing and cleaning stages:
 
 `Movies.csv`: Raw movie data from the API.
 
