@@ -26,10 +26,45 @@ Identified key numerical statistics such as mean, max, and min values.
 
 **1. Top 10 Most Popular Actors**
 
-```markdown
 ![movie-recommendation](../images/top_10_actors.png)
-<img src="../images/top_10_actors.png" alt="movie-recommendation" width="500" />
-```
+
+- The graph tells us that Nicolas Cage and Jackie Chan have the highest popularity scores. Other actors like Tom Hanks, Bruce Willis, and Robert De Niro follow closely behind, all with similar scores. The chart offers a comparative view of their fame based on these scores.
+- The most popular actors in the dataset have appeared in multiple high-grossing movies.
+- Actor popularity is based on the number of appearances in movies.
+
+
+**2. Top 10 Most Popular Directors**
+
+![movie-recommendation](../images/top_10_directors.png)
+
+- Steven Spielberg stands out as the most prolific director on this list, with nearly 30 movies. It reflects his long-standing and active career in Hollywood.
+- Ridley Scott and Ron Howard follow, each having directed just over 20 movies.
+- Martin Scorsese, Clint Eastwood, and Robert Rodriguez are in the mid-range, with 15–20 movies.
+
+**3. Top 10 Movies by Revenue**
+
+![movie-recommendation](../images/top_10_movies_by_revenue.png)
+
+- In this analysis, we identified the top 10 movies based on their total revenue.
+- The dataset includes revenue data, and we sort the movies by their revenue in descending order to highlight the highest-grossing films.
+- "Avatar" is the highest-grossing movie, generating close to $3 billion in revenue.
+- "Avengers: Endgame" follows closely behind, with revenue slightly under $3 billion.
+- The movies in the lower range still achieved impressive box office revenues, around $1.5–2 billion.
+
+
+**4. Average Runtime**
+
+![movie-recommendation](../images/movie_runtime_distribution.png)
+
+- The mean runtime is useful for understanding the typical length of movies in the dataset and can highlight any trends, such as whether shorter or longer movies are more common in certain genres or periods.
+- The average run time of a movie is 100 minutes
+
+
+
+
+
+
+
 
 
 
