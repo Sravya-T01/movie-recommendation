@@ -133,7 +133,8 @@ The final dataset contains the following columns:
 - top_actors
 - keywords
 
-### **9. Data Analysis** (Future Steps - in `2. Exploratory Data Analysis Folder`)
+### **9. Data Analysis** 
+(Future Steps - in `2. Exploratory Data Analysis Folder`)
 
 Once the dataset is prepared, it can be used for further analysis, such as:
 
