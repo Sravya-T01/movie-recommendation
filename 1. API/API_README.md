@@ -145,6 +145,8 @@ Once the dataset is prepared, it can be used for further analysis, such as:
 - Top genre combinations
 - Correlation between columns
 
+## File Structure
+
 ```bash
 /data
     Combined_Movies_Details.csv
