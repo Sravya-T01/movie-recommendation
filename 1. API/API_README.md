@@ -47,7 +47,9 @@ Once you have the API key, you need to add it to the project.
 
 The movie data is fetched from the TMDb API using the /movie/popular endpoint, which retrieves a list of popular movies. The data is collected across multiple pages and stored in a data frame.
 
-```response = requests.get(f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en-US&page={j}').json()```
+```python
+response = requests.get(f'https://api.themoviedb.org/3/movie/popular?api_key={api_key}&language=en-US&page={j}').json()
+```
 
 The data includes:
 
@@ -61,6 +63,7 @@ The data includes:
 The movie data is saved in a CSV file called Movies.csv.
 
 **2. Data Cleaning**
+
 The dataset is cleaned by replacing line breaks in the overview column to ensure the data is readable and consistent. Duplicates based on `movie_ID` are also removed.
 ```python
 df['overview'] = df['overview'].replace({r'\n': ' ', r'\r': ' '}, regex=True)
@@ -69,6 +72,7 @@ df.to_csv('Cleaned_Movies.csv', index=False)
 `Cleaned_Movies.csv` (an intermediate file) is not uploaded to the repository as it is only used for cleaning purposes and has no further use in the analysis or recommender system.
 
 **3.Fetching Movie Details**
+
 Additional details such as budget, genres, production companies, revenue, and runtime are fetched for each movie using the `movie ID`.
 ```python
 response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}').json()
@@ -77,6 +81,7 @@ These details are stored in a new CSV file called `Details.csv` (not uploaded to
 
 
 **4.Merging Datasets**
+
 The movie details are merged with the cleaned movie dataset based on the ``movie_ID`` column. The merged dataset is saved as `Combined_Movies_Details.csv`.
 ```python
 combined_df = pd.merge(cleaned_movies_df, updated_details_df, on='movie_ID', how='left')
@@ -84,6 +89,7 @@ combined_df.to_csv('../data/Combined_Movies_Details.csv', index=False)
 ```
 
 **5.Adding Cast and Crew Details**
+
 The cast and crew details, including the director and top 3 actors, are fetched for each movie using the `/movie/{movie_id}/credits` API endpoint.
 ```python
 response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}/credits?api_key={api_key}').json()
@@ -91,12 +97,14 @@ response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}/credits?
 These details are saved in `Movie_Crew_Details.csv`.
 
 **6.Adding Keywords**
+
 Movie keywords are fetched using the `/movie/{movie_id}/keywords` API endpoint and stored in `movie_keywords.csv`.
 ```python
 response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}/keywords?api_key={api_key}&language=en-US').json()
 ```
 
 **7.Final Merging**
+
 The final dataset is created by merging the combined dataset with the movie keywords. The final dataset is saved as `complete_movie_dataset.csv`.\
 
 ```python
@@ -104,6 +112,7 @@ updated_movie_dataset = complete_movie_dataset.merge(movie_keywords, on='movie_I
 updated_movie_dataset.to_csv('../data/complete_movie_dataset.csv', index=False)
 ```
 **8.Final Dataset**
+
 The final dataset contains the following columns:
 - movie_ID
 - title
@@ -125,6 +134,7 @@ The final dataset contains the following columns:
 - keywords
 
 **9. Data Analysis** (Future Steps - in `2. Exploratory Data Analysis Folder`)
+
 Once the dataset is prepared, it can be used for further analysis, such as:
 
 - Genre distribution analysis.
@@ -144,6 +154,7 @@ README.md
 
 ```
 **Note**
+
 Note: The following intermediate files are not included in the repository because they are used only during the data processing and cleaning stages:
 
 `Movies.csv`: Raw movie data from the API.
@@ -154,10 +165,12 @@ These files are generated during the execution of the notebook and are not neces
 
 
 ## Notes
+
 Make sure to replace 'api_key_here' with your actual TMDb API key in the code.
 The API rate limit is respected by adding delays between API requests to avoid overloading the server.
 
 ## License
+
 This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 
