@@ -16,8 +16,12 @@ Redundant columns, such as homepage, were dropped due to excessive missing value
 
 ### **1. Data Exploration**
 
-Displayed dataset structure using df.info() and df.describe().
+Displayed dataset structure using `df.info()` and `df.describe()`.
 
 Checked for missing values and decided on handling strategies.
 
 Identified key numerical statistics such as mean, max, and min values.
+
+## Insights
+
+**1. Top 10 Most Popular Actors**
