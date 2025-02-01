@@ -33,7 +33,7 @@ Since the `.env` file is included in `.gitignore` to keep the API key secure, yo
 API_KEY: your_tmdb_api_key
 ```
 
-**3. Download the movies.pkl and similarity.pkl files:
+**3. Download the movies.pkl and similarity.pkl files**:
 
 - movies.pkl: Contains the movie dataset.
 - similarity.pk: Contains the precomputed movie similarity matrix.
