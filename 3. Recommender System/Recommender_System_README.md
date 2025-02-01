@@ -120,19 +120,5 @@ After evaluating both vectorization techniques, the best-performing model is pic
 
 The `pickle` module is used for serializing the trained models.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- The movie data is pickled and saved as `movies.pkl`.
+- The vectorized similarity matrix of movies is pickled and saved as `similarity.pkl`.
