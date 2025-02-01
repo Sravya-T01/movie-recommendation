@@ -83,7 +83,8 @@ Once the app is running, open your browser and go to [http://localhost:8501] to 
 
 ## Example
 
-When you launch the app and select a movie like "Harry Potter and the Goblet of Fire", the system will recommend the top 10 most similar movies, displaying their posters and titles. The recommendations are based on content similarity calculated using the movie data.
+- When you launch the app and select a movie like "Harry Potter and the Goblet of Fire", the system will recommend the top 10 most similar movies, displaying their posters and titles.
+- The recommendations are based on content similarity calculated using the movie data.
 
 
 
