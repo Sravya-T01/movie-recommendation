@@ -40,10 +40,11 @@ API_KEY: your_tmdb_api_key
 
 **Note** 
 
-The similarity.pkl file was stored on Google Drive and is larger than 100 MB, so it is not included in the GitHub repository. The file will be downloaded automatically when you run the app for the first time.
+The similarity.pkl file is larger than 100 MB, so it is not included in the GitHub repository. It is stored on Google Drive, and the app will automatically download it the first time it runs if it is not already present locally.
+
 - Direct Google Drive link used for downloading: [https://drive.google.com/uc?id=1Tl63LJZ2MPmilnFyQHD0I9Q72heUXIhz]
 
-**Optional**: If similarity.pkl is not already downloaded, it will be fetched from Google Drive automatically when the app runs.
+**Optional**: If you encounter issues with the automatic download, you can manually download the similarity.pkl file from the provided Google Drive link and place it in the project directory.
 
 ## Running the Application
 
