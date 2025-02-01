@@ -59,7 +59,16 @@ Identified key numerical statistics such as mean, max, and min values.
 - The mean runtime is useful for understanding the typical length of movies in the dataset and can highlight any trends, such as whether shorter or longer movies are more common in certain genres or periods.
 - The average run time of a movie is 100 minutes
 
+**5. Average Voting Score Distribution**
 
+![movie-recommendation](../images/distribution_of_movie_ratings.png)
+
+- Most movies are rated around 6, which is the most common score in the data.
+- Very few movies have extremely low (below 4) or extremely high (above 8) ratings.
+- The ratings form a bell-shaped pattern, with the majority of scores clustering in the middle.
+- The overall distribution is fairly balanced, but there are slightly more higher ratings (above 5) than lower ones.
+
+**6. Top Production Companies**
 
 
 
