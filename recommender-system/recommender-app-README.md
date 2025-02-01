@@ -41,9 +41,9 @@ API_KEY: your_tmdb_api_key
 **Note** 
 
 The similarity.pkl file was stored on Google Drive and is larger than 100 MB, so it is not included in the GitHub repository. The file will be downloaded automatically when you run the app for the first time.
-- Direct Google Drive link used for downloading: [https://drive.google.com/uc?id=1Tl63LJZ2MPmilnFyQHD0I9Q72heUXIhz](url)
+- Direct Google Drive link used for downloading: [https://drive.google.com/uc?id=1Tl63LJZ2MPmilnFyQHD0I9Q72heUXIhz]
 
-**Optional**: If similarity.pkl is not already downloaded, it will be fetched from Google Drive automatically when the app is run.
+**Optional**: If similarity.pkl is not already downloaded, it will be fetched from Google Drive automatically when the app runs.
 
 ## Running the Application
 
@@ -52,7 +52,7 @@ The similarity.pkl file was stored on Google Drive and is larger than 100 MB, so
 streamlit run recommender-system.py
 ```
 
-Once the app is running, open your browser and go to [http://localhost:8501](url) to use the movie recommender system or when you run the code it will automatically open or give you a link
+Once the app is running, open your browser and go to [http://localhost:8501] to use the movie recommender system or when you run the code it will automatically open or give you a link
 
 ## How It Works
 
