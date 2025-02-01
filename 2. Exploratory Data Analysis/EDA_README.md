@@ -24,7 +24,7 @@ Identified key numerical statistics such as mean, max, and min values.
 
 ## Insights
 
-**1. Top 10 Most Popular Genres**
+#### **1. Top 10 Most Popular Genres**
 
 ![movie-recommendation](../images/top_10_genres.png)
 
@@ -34,7 +34,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - These genres are popular because they offer a range of emotions and experiences—whether it's emotional depth, laughter, or excitement—ensuring broad appeal across diverse audiences.
 
 
-**2. Top 10 Most Popular Actors**
+#### **2. Top 10 Most Popular Actors**
 
 ![movie-recommendation](../images/top_10_actors.png)
 
@@ -43,7 +43,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - Actor popularity is based on the number of appearances in movies.
 
 
-**3. Top 10 Most Popular Directors**
+#### **3. Top 10 Most Popular Directors**
 
 ![movie-recommendation](../images/top_10_directors.png)
 
@@ -51,7 +51,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - Ridley Scott and Ron Howard follow, each having directed just over 20 movies.
 - Martin Scorsese, Clint Eastwood, and Robert Rodriguez are in the mid-range, with 15–20 movies.
 
-**4. Top 10 Movies by Revenue**
+#### **4. Top 10 Movies by Revenue**
 
 ![movie-recommendation](../images/top_10_movies_by_revenue.png)
 
@@ -62,14 +62,14 @@ Identified key numerical statistics such as mean, max, and min values.
 - The movies in the lower range still achieved impressive box office revenues, around $1.5–2 billion.
 
 
-**5. Average Runtime**
+#### **5. Average Runtime**
 
 ![movie-recommendation](../images/movie_runtime_distribution.png)
 
 - The mean runtime is useful for understanding the typical length of movies in the dataset and can highlight any trends, such as whether shorter or longer movies are more common in certain genres or periods.
 - The average run time of a movie is 100 minutes
 
-**6. Average Voting Score Distribution**
+#### **6. Average Voting Score Distribution**
 
 ![movie-recommendation](../images/distribution_of_movie_ratings.png)
 
@@ -78,7 +78,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - The ratings form a bell-shaped pattern, with the majority of scores clustering in the middle.
 - The overall distribution is fairly balanced, but there are slightly more higher ratings (above 5) than lower ones.
 
-**7. Top Production Companies**
+#### **7. Top Production Companies**
 
 ![movie-recommendation](../images/top_10_production_companies.png)
 
@@ -86,7 +86,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - Other major contributors include "Columbia Pictures," "20th Century Fox," and "Walt Disney Pictures," with movie counts ranging between 125 and 150.
 - The chart demonstrates that these companies are key players in the movie industry, with a relatively small difference in movie production among the top contributors.
 
-**8. Language Distribution**
+#### **8. Language Distribution**
 
 ![movie-recommendation](../images/top_10_movie_languages.png)
 
@@ -95,7 +95,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - Other languages such as Japanese, Spanish and French have moderate representation
 - Languages with fewer movies may still represent niche or regional industries, showcasing the diversity of content across cultures.
 
-**9. Release Year Distribution**
+#### **9. Release Year Distribution**
 
 ![movie-recommendation](../images/movies_released_overtime.png)
 
@@ -103,7 +103,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - The dataset shows that the highest number of movies were produced around 2021 or 2022, indicating a peak in film production during these years.
 - A noticeable decline in movie production was observed in 2020, likely due to the impact of the COVID-19 pandemic, which led to disruptions in filming schedules, theater closures, and delays in movie releases.
 
-**10. Genre vs Revenue**
+#### **10. Genre vs Revenue**
 
 ![movie-recommendation](../images/genres_vs_revenue.png)
 
@@ -112,7 +112,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - Family films rank third in average revenue, appealing to all age groups and benefiting from the success of major franchises like Disney and Pixar.
 - These genres dominate because they feature high production values, wide audience appeal, and established franchises with loyal fan bases.
 
-**11. Voting vs Revenue**
+#### **11. Voting vs Revenue**
 
 ![movie-recommendation](../images/vote_avg_vs_revenue.png)
 
@@ -120,7 +120,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - High ratings might contribute to higher revenue, but they are not the only factor. Marketing, genre, star power, and franchise recognition could also play major roles.
 - Most movies earn moderate revenue regardless of vote average, but exceptional movies (both in quality and marketing) can achieve massive financial success.
 
-**12. Genre Combinations**
+#### **12. Genre Combinations**
 
 ![movie-recommendation](../images/genre_combinations.png)
 
@@ -129,7 +129,7 @@ Identified key numerical statistics such as mean, max, and min values.
 - Action and Adventure follows closely, delivering thrilling action sequences paired with adventurous storylines that captivate fans of escapism.
 - These combinations dominate because they appeal to a wide range of audiences, blending emotional depth, excitement, and suspense in ways that cater to diverse tastes.
 
-**13. Correlation Heatmap**
+#### **13. Correlation Heatmap**
 
 ![movie-recommendation](../images/correlation_heatmap.png)
 
